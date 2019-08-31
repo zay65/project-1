@@ -46,24 +46,24 @@ console.log(getRandomQuote());
 // Created a function called printQuote to print the random quote that is pulled, on the page
 function printQuote() {
 let message = getRandomQuote();
-let result = '  ';
+let bank = '  ';
 
-message += '<p class="quote">' + [random.quote] + '</p>';
+bank += '<p class="quote">' + [message.quote] + '</p>';
 
-message += '<p class="source">' + [random.source];
+bank += '<p class="source">' + [message.source];
 
-if(random.citation) {
-message += '<span class="citation">' + [random.citation] + '</span>';
+if(message.citation) {
+bank += '<span class="citation">' + [message.citation] + '</span>';
 } 
-if (random.year) {
+if (message.year) {
 
-message += '<span class="year">' + [random.year] + '</span>';
+bank += '<span class="year">' + [message.year] + '</span>';
 }
-message += '</p>';
+bank += '</p>';
 // logs the 'message' string into the console
-console.log(message);
+console.log(bank);
 
-document.getElementById('quote-box').innerHTML = message;
+document.getElementById('quote-box').innerHTML = bank;
 } 
 
 //created a variable named change
@@ -71,7 +71,7 @@ var change = setInterval;
 
 // changes the quote and background
 setInterval(printQuote, 7000);
-setInterval(diffBackground, 7000 );
+
 
 
 
