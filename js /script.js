@@ -34,18 +34,18 @@ console.log(quotes);
 
 // Made a function called getRandomQuote to draw random quotes from the quote array
 
-function getRandomQuote() {
+function getRandomQuote {
 var randomQuote = Math.floor( Math.random() * quotes.length);
 for (var i = 0; i < quotes.length; i++)  
 return quotes [randomQuote];
 
 // getRandomQuote is printed on the console
-console.log(getRandomQuote());
+console.log(getRandomQuote);
 }; 
 
 // Created a function called printQuote to print the random quote that is pulled, on the page
 function printQuote() {
-let message = getRandomQuote();
+let message = getRandomQuote;
 let bank = '  ';
 
 bank += '<p class="quote">' + [message.quote] + '</p>';
@@ -66,8 +66,8 @@ console.log(bank);
 document.getElementById('quote-box').innerHTML = bank;
 } 
 
-//created a variable named change
-var change = setInterval;
+
+
 
 // changes the quote and background
 setInterval(printQuote, 7000);
